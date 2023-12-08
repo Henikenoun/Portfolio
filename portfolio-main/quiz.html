@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- ==== CSS FILE ==== -->
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/quiz.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- ==== Style Switcher ====-->
+    <link rel="stylesheet" href="/css/style-switcher.css">
+    <link rel="stylesheet" href="/css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="/css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="/css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="/css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="/css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+     <!-- ==== JS FILE ==== -->
+    <script src="/js/script.js" defer></script>
+    <script src="/js/quiz.js" defer></script>
+    <script src="/js/style-switcher.js" defer></script>
+    <script src="/js/bootstrap/bootstrap.min.js"defer></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- ==== main-contnair start ==== -->
+    <div class="main-container">
+    <!-- ==== Aside start ==== -->
+        <div class="aside">
+            <div class="befor"></div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="ul">
+                <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="portfolio.html"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="contact.html"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="quiz.html"  class="active"><i class="fa-solid fa-play"></i>Quiz</a></li>
+            </ul>
+            <div class="after"></div>
+        </div>
+    <!-- ==== Aside end ==== -->  
+
+    <!-- ==== main-content start ==== --> 
+        <div class="main-content">
+            <!-- ==== quiz main start ==== -->
+            <div id="quiz-container" class="main">
+                <div id="container" class="container">
+                    <div class="start" style="padding: 151px 247px;">
+                        <button class="submit-btn" id="start">START !!</button>
+                    </div>
+                    <div class="question"></div><span class="num"></span>
+                    <ul class="options">
+                    </ul>
+                    <div class="" style="display: flex;justify-content: space-between; margin-top: 50px;">
+                        <button class="submit-btn" id="button"></button>
+                        <div id="timer">Time remaining: <span id="time">20</span> seconds</div>
+                    </div>
+                    <div class="result" id="result"></div>
+                </div>
+            </div>
+            <!-- ==== quiz main end  ==== -->
+        </div>
+    <!-- ==== main-content end ==== -->
+    </div>
+    <!-- ==== main-container end ==== -->
+    <!--==== Style Switcher Start ====-->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon" >
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
